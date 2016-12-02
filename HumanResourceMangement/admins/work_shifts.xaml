@@ -1,0 +1,31 @@
+﻿<Page x:Class="admins.work_shifts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:admins"
+      mc:Ignorable="d"
+      Title="work_shifts" Height="498" Width="625">
+
+    <Grid>
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="244" Margin="3,1,0,0" VerticalAlignment="Top" Width="569" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Navigated="frame_Navigated"/>
+        <Label x:Name="label" Content="Work Shift " HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.726,0.709" Width="561" Height="33" FontWeight="Bold" FontSize="18.667" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Frame x:Name="frame1" Content="" HorizontalAlignment="Left" Height="226" Margin="8,254,0,0" VerticalAlignment="Top" Width="564" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="16,309,0,0" VerticalAlignment="Top" Height="167" Width="546"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="16,261,0,0" VerticalAlignment="Top" Width="75" Height="34" FontWeight="Bold" FontSize="16" Click="button_Click"/>
+        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="112,261,0,0" VerticalAlignment="Top" Width="75" Height="34" FontWeight="Bold" FontSize="16" Click="button1_Click"/>
+        <Label x:Name="label1" Content="Shift Name" HorizontalAlignment="Left" Margin="18,51,0,0" VerticalAlignment="Top" Width="74" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="22" Margin="126,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"/>
+        <Label x:Name="label2" Content="From" HorizontalAlignment="Left" Margin="16,104,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Width="74"/>
+        <Label x:Name="label3" Content="To" HorizontalAlignment="Left" Margin="15,157,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.842,0.423" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Width="81"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="129,106,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="8:00" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="9:00:00" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="130,159,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="20:00" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="22:00" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
+    </Grid>
+</Page>

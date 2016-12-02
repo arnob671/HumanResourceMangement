@@ -1,0 +1,18 @@
+﻿<Page x:Class="admins.mail_config"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:admins"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="700"
+      Title="mail_config">
+
+    <Grid Margin="0,0,7,1">
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="372" Margin="13,15,0,0" VerticalAlignment="Top" Width="665" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+        <Label x:Name="label" Content="Mail Configuration" HorizontalAlignment="Left" Margin="22,21,0,0" VerticalAlignment="Top" Width="646" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="button" Content="Send as send mail" HorizontalAlignment="Left" Margin="123,148,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.103,1.043" Height="49" FontWeight="Bold" FontSize="16" PreviewMouseDown="button_PreviewMouseDown"/>
+        <Button x:Name="button1" Content="SMTP" HorizontalAlignment="Left" Margin="120,225,0,0" VerticalAlignment="Top" Width="146" Height="57" FontWeight="Bold" FontSize="16" PreviewMouseDown="button1_PreviewMouseDown"/>
+
+    </Grid>
+</Page>

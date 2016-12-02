@@ -1,0 +1,32 @@
+﻿<Page x:Class="admins.localization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="670"
+	Title="localization">
+
+    <Grid>
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="378" Margin="14,20,0,0" VerticalAlignment="Top" Width="645" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Navigated="frame_Navigated"/>
+        <Label x:Name="label" Content="Localization" HorizontalAlignment="Left" Margin="15,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.5" Width="587" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" FontSize="18.667" FontWeight="Bold"/>
+        <Label Content="Language" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,54,0,0"/>
+        <Label Content="Date Format" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,95,0,0"/>
+        <ComboBox x:Name="ComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="166,58,0,0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="English" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Chinese" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Bangla" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Button x:Name="button1" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="177,142,0,0" Click="Button_Click"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="165,103,0,0" SelectionChanged="ComboBox_SelectionChanged" RenderTransformOrigin="0.5,0.5">
+            <ComboBoxItem Content="dd-mm-yyyy" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="mm-dd-yyyy" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="yyyy-mm-dd" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="52,144,0,0" VerticalAlignment="Top" Width="75" Click="button_Click_1"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="25,185,0,0" VerticalAlignment="Top" Height="209" Width="614"/>
+
+
+
+    </Grid>
+</Page>

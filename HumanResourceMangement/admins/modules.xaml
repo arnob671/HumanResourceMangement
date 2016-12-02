@@ -1,0 +1,28 @@
+﻿<Page x:Class="admins.modules"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="670"
+	Title="modules">
+
+    <Grid>
+
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="378" Margin="15,12,0,0" VerticalAlignment="Top" Width="645" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Navigated="frame_Navigated" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="Module Confuguration" HorizontalAlignment="Left" Margin="15,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.5" Width="587" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" FontSize="18.667" FontWeight="Bold"/>
+        <Button Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="136,279,0,0" Click="Button_Click" Height="40" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="245,279,0,0" VerticalAlignment="Top" Width="75" Height="39" FontWeight="Bold" FontSize="16" Click="button_Click_1"/>
+        <CheckBox x:Name="checkBox" Content="Enable Admin Module" HorizontalAlignment="Left" Margin="51,51,0,0" VerticalAlignment="Top" Checked="checkBox_Checked_1"/>
+        <CheckBox x:Name="checkBox1" Content="Enable PIM Module" HorizontalAlignment="Left" Margin="51,74,0,0" VerticalAlignment="Top" Checked="checkBox1_Checked"/>
+        <CheckBox x:Name="checkBox2" Content="Enable Leave Module" HorizontalAlignment="Left" Margin="52,98,0,0" VerticalAlignment="Top" Checked="checkBox2_Checked"/>
+        <CheckBox x:Name="checkBox3" Content="Enable Time Module" HorizontalAlignment="Left" Margin="51,128,0,0" VerticalAlignment="Top" Checked="checkBox3_Checked_1"/>
+        <CheckBox x:Name="checkBox4" Content="Enable Recruiment Module" HorizontalAlignment="Left" Margin="52,152,0,0" VerticalAlignment="Top" Checked="checkBox4_Checked_1" />
+        <CheckBox x:Name="checkBox5" Content="Enable Performence Module" HorizontalAlignment="Left" Margin="53,179,0,0" VerticalAlignment="Top" Checked="checkBox5_Checked"/>
+
+
+
+
+
+    </Grid>
+</Page>
